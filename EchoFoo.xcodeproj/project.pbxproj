@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80EF30C31E449C44000B2519 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EF30C21E449C44000B2519 /* AppDelegate.swift */; };
+		80EF30C51E449C44000B2519 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EF30C41E449C44000B2519 /* ViewController.swift */; };
+		80EF30C81E449C44000B2519 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80EF30C61E449C44000B2519 /* Main.storyboard */; };
+		80EF30CB1E449C44000B2519 /* EchoFoo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80EF30C91E449C44000B2519 /* EchoFoo.xcdatamodeld */; };
+		80EF30CD1E449C44000B2519 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80EF30CC1E449C44000B2519 /* Assets.xcassets */; };
+		80EF30D01E449C44000B2519 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80EF30CE1E449C44000B2519 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		80EF30BF1E449C43000B2519 /* EchoFoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EchoFoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80EF30C21E449C44000B2519 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		80EF30C41E449C44000B2519 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		80EF30C71E449C44000B2519 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80EF30CA1E449C44000B2519 /* EchoFoo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EchoFoo.xcdatamodel; sourceTree = "<group>"; };
+		80EF30CC1E449C44000B2519 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80EF30CF1E449C44000B2519 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		80EF30D11E449C44000B2519 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80EF30BC1E449C43000B2519 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80EF30B61E449C43000B2519 = {
+			isa = PBXGroup;
+			children = (
+				80EF30C11E449C43000B2519 /* EchoFoo */,
+				80EF30C01E449C43000B2519 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80EF30C01E449C43000B2519 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80EF30BF1E449C43000B2519 /* EchoFoo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80EF30C11E449C43000B2519 /* EchoFoo */ = {
+			isa = PBXGroup;
+			children = (
+				80EF30C21E449C44000B2519 /* AppDelegate.swift */,
+				80EF30C41E449C44000B2519 /* ViewController.swift */,
+				80EF30C61E449C44000B2519 /* Main.storyboard */,
+				80EF30CC1E449C44000B2519 /* Assets.xcassets */,
+				80EF30CE1E449C44000B2519 /* LaunchScreen.storyboard */,
+				80EF30D11E449C44000B2519 /* Info.plist */,
+				80EF30C91E449C44000B2519 /* EchoFoo.xcdatamodeld */,
+			);
+			path = EchoFoo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80EF30BE1E449C43000B2519 /* EchoFoo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80EF30D41E449C44000B2519 /* Build configuration list for PBXNativeTarget "EchoFoo" */;
+			buildPhases = (
+				80EF30BB1E449C43000B2519 /* Sources */,
+				80EF30BC1E449C43000B2519 /* Frameworks */,
+				80EF30BD1E449C43000B2519 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EchoFoo;
+			productName = EchoFoo;
+			productReference = 80EF30BF1E449C43000B2519 /* EchoFoo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80EF30B71E449C43000B2519 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = RoboTigers;
+				TargetAttributes = {
+					80EF30BE1E449C43000B2519 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 80EF30BA1E449C43000B2519 /* Build configuration list for PBXProject "EchoFoo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80EF30B61E449C43000B2519;
+			productRefGroup = 80EF30C01E449C43000B2519 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80EF30BE1E449C43000B2519 /* EchoFoo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80EF30BD1E449C43000B2519 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80EF30D01E449C44000B2519 /* LaunchScreen.storyboard in Resources */,
+				80EF30CD1E449C44000B2519 /* Assets.xcassets in Resources */,
+				80EF30C81E449C44000B2519 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80EF30BB1E449C43000B2519 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80EF30C51E449C44000B2519 /* ViewController.swift in Sources */,
+				80EF30CB1E449C44000B2519 /* EchoFoo.xcdatamodeld in Sources */,
+				80EF30C31E449C44000B2519 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		80EF30C61E449C44000B2519 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80EF30C71E449C44000B2519 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		80EF30CE1E449C44000B2519 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80EF30CF1E449C44000B2519 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80EF30D21E449C44000B2519 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80EF30D31E449C44000B2519 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80EF30D51E449C44000B2519 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EchoFoo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.queensvocational.robotigers.EchoFoo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		80EF30D61E449C44000B2519 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EchoFoo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.queensvocational.robotigers.EchoFoo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80EF30BA1E449C43000B2519 /* Build configuration list for PBXProject "EchoFoo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80EF30D21E449C44000B2519 /* Debug */,
+				80EF30D31E449C44000B2519 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80EF30D41E449C44000B2519 /* Build configuration list for PBXNativeTarget "EchoFoo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80EF30D51E449C44000B2519 /* Debug */,
+				80EF30D61E449C44000B2519 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		80EF30C91E449C44000B2519 /* EchoFoo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				80EF30CA1E449C44000B2519 /* EchoFoo.xcdatamodel */,
+			);
+			currentVersion = 80EF30CA1E449C44000B2519 /* EchoFoo.xcdatamodel */;
+			path = EchoFoo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 80EF30B71E449C43000B2519 /* Project object */;
+}
