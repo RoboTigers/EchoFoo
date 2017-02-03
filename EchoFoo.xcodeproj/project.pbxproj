@@ -13,6 +13,9 @@
 		80EF30CB1E449C44000B2519 /* EchoFoo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80EF30C91E449C44000B2519 /* EchoFoo.xcdatamodeld */; };
 		80EF30CD1E449C44000B2519 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80EF30CC1E449C44000B2519 /* Assets.xcassets */; };
 		80EF30D01E449C44000B2519 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80EF30CE1E449C44000B2519 /* LaunchScreen.storyboard */; };
+		80EF30D81E449DA0000B2519 /* EchoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EF30D71E449DA0000B2519 /* EchoViewController.swift */; };
+		80EF30DA1E44A055000B2519 /* FirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EF30D91E44A055000B2519 /* FirstPageViewController.swift */; };
+		80EF30DC1E44A19F000B2519 /* EchoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EF30DB1E44A19F000B2519 /* EchoTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		80EF30CC1E449C44000B2519 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80EF30CF1E449C44000B2519 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80EF30D11E449C44000B2519 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80EF30D71E449DA0000B2519 /* EchoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EchoViewController.swift; sourceTree = "<group>"; };
+		80EF30D91E44A055000B2519 /* FirstPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstPageViewController.swift; sourceTree = "<group>"; };
+		80EF30DB1E44A19F000B2519 /* EchoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EchoTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,9 @@
 				80EF30C21E449C44000B2519 /* AppDelegate.swift */,
 				80EF30C41E449C44000B2519 /* ViewController.swift */,
 				80EF30C61E449C44000B2519 /* Main.storyboard */,
+				80EF30DB1E44A19F000B2519 /* EchoTableViewController.swift */,
+				80EF30D91E44A055000B2519 /* FirstPageViewController.swift */,
+				80EF30D71E449DA0000B2519 /* EchoViewController.swift */,
 				80EF30CC1E449C44000B2519 /* Assets.xcassets */,
 				80EF30CE1E449C44000B2519 /* LaunchScreen.storyboard */,
 				80EF30D11E449C44000B2519 /* Info.plist */,
@@ -140,6 +149,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				80EF30C51E449C44000B2519 /* ViewController.swift in Sources */,
+				80EF30D81E449DA0000B2519 /* EchoViewController.swift in Sources */,
+				80EF30DC1E44A19F000B2519 /* EchoTableViewController.swift in Sources */,
+				80EF30DA1E44A055000B2519 /* FirstPageViewController.swift in Sources */,
 				80EF30CB1E449C44000B2519 /* EchoFoo.xcdatamodeld in Sources */,
 				80EF30C31E449C44000B2519 /* AppDelegate.swift in Sources */,
 			);
