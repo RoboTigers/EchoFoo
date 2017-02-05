@@ -53,8 +53,12 @@ class FirstPageViewController: UIViewController {
             for anEcho in echoArray as! [Echo] {
                 print("\(anEcho.text)")
             }
-            let lastEcho = echoArray[echoArray.count-1] as? Echo
-            echoVc.dataForLabel = (lastEcho?.text)!
+            var lastEchoText = "No echoes yet in data store"
+            if (echoArray.count != 0) {
+                let lastEchoObject = echoArray[echoArray.count-1] as? Echo
+                lastEchoText = (lastEchoObject?.text)!
+            }
+            echoVc.dataForLabel = lastEchoText
             
         }
     }
