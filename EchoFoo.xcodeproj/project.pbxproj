@@ -108,6 +108,7 @@
 				TargetAttributes = {
 					80EF30BE1E449C43000B2519 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = RZHMRCMVDQ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -276,6 +277,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RZHMRCMVDQ;
 				INFOPLIST_FILE = EchoFoo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.queensvocational.robotigers.EchoFoo;
@@ -288,6 +290,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RZHMRCMVDQ;
 				INFOPLIST_FILE = EchoFoo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.queensvocational.robotigers.EchoFoo;
@@ -315,6 +318,7 @@
 				80EF30D61E449C44000B2519 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
