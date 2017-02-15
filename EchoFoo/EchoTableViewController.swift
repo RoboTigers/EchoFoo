@@ -12,7 +12,17 @@ import CoreData
 class EchoTableViewController: UITableViewController {
 
     var echoArray: [NSManagedObject] = []
-    //var listItems : NSArray = NSArray()
+    
+    private func refreshEchoArray() {
+        CoreDataStack.defaultStack.syncWithCompletion(nil)
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Echo")
+        do {
+            let resultArray = try CoreDataStack.defaultStack.managedObjectContext.fetch(fetchRequest)
+            self.echoArray = (resultArray as NSArray) as! [NSManagedObject]
+        } catch {
+            return
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,16 +47,22 @@ class EchoTableViewController: UITableViewController {
 //            print("Could not fetch. \(error), \(error.userInfo)")
 //        }
         
-        CoreDataStack.defaultStack.syncWithCompletion(nil)
-        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Echo")
-        do {
-            let resultArray = try CoreDataStack.defaultStack.managedObjectContext.fetch(fetchRequest)
-            self.echoArray = (resultArray as NSArray) as! [NSManagedObject]
-        } catch {
-            return
-        }
+//        CoreDataStack.defaultStack.syncWithCompletion(nil)
+//        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Echo")
+//        do {
+//            let resultArray = try CoreDataStack.defaultStack.managedObjectContext.fetch(fetchRequest)
+//            self.echoArray = (resultArray as NSArray) as! [NSManagedObject]
+//        } catch {
+//            return
+//        }
+        
+        refreshEchoArray()
         
         title = "\(echoArray.count) Echos"
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        refreshEchoArray()
     }
     
     override func didReceiveMemoryWarning() {
@@ -91,14 +107,23 @@ class EchoTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
-            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-                return
-            }
-            let managedContext = appDelegate.persistentContainer.viewContext
+//            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+//                return
+//            }
+//            let managedContext = appDelegate.persistentContainer.viewContext
+//            let echo = echoArray[indexPath.row]
+//            managedContext.delete(echo)
+//            do {
+//                try managedContext.save()
+//            } catch let error as NSError {
+//                print("Could not save. \(error), \(error.userInfo)")
+//            }
+            
+            CoreDataStack.defaultStack.syncWithCompletion(nil)
             let echo = echoArray[indexPath.row]
-            managedContext.delete(echo)
             do {
-                try managedContext.save()
+                CoreDataStack.defaultStack.managedObjectContext.delete(echo)
+                try CoreDataStack.defaultStack.managedObjectContext.save()
             } catch let error as NSError {
                 print("Could not save. \(error), \(error.userInfo)")
             }
