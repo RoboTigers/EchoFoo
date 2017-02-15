@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Ensembles
 
 class EchoViewController: UIViewController {
 
@@ -21,18 +22,26 @@ class EchoViewController: UIViewController {
         label.text = dataForLabel
         
         // write the value to the data store
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
-        }
-        let managedContext = appDelegate.persistentContainer.viewContext
-        let echo = Echo(context: managedContext)
+        // SHARON: Replace this with CoreDataStack below
+//        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+//            return
+//        }
+//        let managedContext = appDelegate.persistentContainer.viewContext
+//        let echo = Echo(context: managedContext)
+//        echo.text = dataForLabel
+//        echo.created = NSDate()
+//        do {
+//            try managedContext.save()
+//        } catch let error as NSError {
+//            print("Could not save the echo. \(error), \(error.userInfo)")
+//        }
+        
+        let echo : Echo = NSEntityDescription.insertNewObject(forEntityName: "Echo", into: CoreDataStack.defaultStack.managedObjectContext) as! Echo
         echo.text = dataForLabel
         echo.created = NSDate()
-        do {
-            try managedContext.save()
-        } catch let error as NSError {
-            print("Could not save the echo. \(error), \(error.userInfo)")
-        }
+        CoreDataStack.defaultStack.saveContext()
+        CoreDataStack.defaultStack.syncWithCompletion(nil)
+
     }
     
     override func viewDidLoad() {
