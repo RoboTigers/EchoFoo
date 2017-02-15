@@ -39,20 +39,27 @@ class FirstPageViewController: UIViewController {
             
             // Read the echo text from the data store and start the page with the last value entered
             var echoArray: [NSManagedObject] = []
-            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-                return
-            }
-            let managedContext = appDelegate.persistentContainer.viewContext
+            // SHARON: Replace this with Ensemble below
+//            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+//                return
+//            }
+//            let managedContext = appDelegate.persistentContainer.viewContext
+//            let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Echo")
+//            do {
+//                echoArray = try managedContext.fetch(fetchRequest)
+//            } catch let error as NSError {
+//                print("Could not fetch. \(error), \(error.userInfo)")
+//            }
+
+            CoreDataStack.defaultStack.syncWithCompletion(nil)
             let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Echo")
             do {
-                echoArray = try managedContext.fetch(fetchRequest)
-            } catch let error as NSError {
-                print("Could not fetch. \(error), \(error.userInfo)")
+                let resultArray = try CoreDataStack.defaultStack.managedObjectContext.fetch(fetchRequest)
+                echoArray = (resultArray as NSArray) as! [NSManagedObject]
+            } catch {
+                return
             }
-            print("echo array size \(echoArray.count)")
-            for anEcho in echoArray as! [Echo] {
-                print("\(anEcho.text)")
-            }
+            
             var lastEchoText = "No echoes yet in data store"
             if (echoArray.count != 0) {
                 let lastEchoObject = echoArray[echoArray.count-1] as? Echo

@@ -12,6 +12,7 @@ import CoreData
 class EchoTableViewController: UITableViewController {
 
     var echoArray: [NSManagedObject] = []
+    //var listItems : NSArray = NSArray()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,15 +25,25 @@ class EchoTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
         // Refresh echoArray everytime the view loads
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
-        }
-        let managedContext = appDelegate.persistentContainer.viewContext
+        // SHARON: Taking this out and replacing with Ensemble CoreDataStack below
+//        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+//            return
+//        }
+//        let managedContext = appDelegate.persistentContainer.viewContext
+//        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Echo")
+//        do {
+//            echoArray = try managedContext.fetch(fetchRequest)
+//        } catch let error as NSError {
+//            print("Could not fetch. \(error), \(error.userInfo)")
+//        }
+        
+        CoreDataStack.defaultStack.syncWithCompletion(nil)
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Echo")
         do {
-            echoArray = try managedContext.fetch(fetchRequest)
-        } catch let error as NSError {
-            print("Could not fetch. \(error), \(error.userInfo)")
+            let resultArray = try CoreDataStack.defaultStack.managedObjectContext.fetch(fetchRequest)
+            self.echoArray = (resultArray as NSArray) as! [NSManagedObject]
+        } catch {
+            return
         }
         
         title = "\(echoArray.count) Echos"
