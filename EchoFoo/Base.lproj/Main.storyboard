@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dMx-5i-dtR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dMx-5i-dtR">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -35,7 +35,7 @@
                                         <rect key="frame" x="0.0" y="30" width="68" height="30"/>
                                         <state key="normal" title="Echo TVC"/>
                                         <connections>
-                                            <segue destination="Dxw-H0-TtB" kind="show" identifier="ShowEchoList" id="1fJ-N6-Zii"/>
+                                            <segue destination="Dxw-H0-TtB" kind="show" id="lLP-Ag-JjE"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -66,11 +66,11 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3m2-Cy-lRl" id="Utg-lc-SGe">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ut7-hL-EDz">
-                                            <rect key="frame" x="15" y="0.0" width="345" height="43"/>
+                                            <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -85,10 +85,22 @@
                             <outlet property="delegate" destination="Dxw-H0-TtB" id="ILf-Qx-Z2Y"/>
                         </connections>
                     </tableView>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="zlM-FZ-Ba1"/>
+                        <barButtonItem title="Item" id="OZG-Mr-I4n"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="1Os-Q6-ot3">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="DUw-16-TVX">
+                            <connections>
+                                <action selector="refreshButtonAction:" destination="Dxw-H0-TtB" id="wXu-bc-KRA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1of-Go-6Jb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="704.79999999999995" y="436.73163418290858"/>
+            <point key="canvasLocation" x="705" y="375"/>
         </scene>
         <!--Echo View Controller-->
         <scene sceneID="nsx-ag-Fk9">
