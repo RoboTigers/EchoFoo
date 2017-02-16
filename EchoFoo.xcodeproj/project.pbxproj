@@ -22,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		8026FA6E1E53FC3F00919709 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		80C860A61E551C070043F6D4 /* EchoFoo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EchoFoo.entitlements; sourceTree = "<group>"; };
 		80EF30BF1E449C43000B2519 /* EchoFoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EchoFoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80EF30C21E449C44000B2519 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80EF30C41E449C44000B2519 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +80,7 @@
 		80EF30C11E449C43000B2519 /* EchoFoo */ = {
 			isa = PBXGroup;
 			children = (
+				80C860A61E551C070043F6D4 /* EchoFoo.entitlements */,
 				80EF30C21E449C44000B2519 /* AppDelegate.swift */,
 				8026FA6E1E53FC3F00919709 /* CoreDataStack.swift */,
 				80EF30C41E449C44000B2519 /* ViewController.swift */,
@@ -138,8 +140,16 @@
 				TargetAttributes = {
 					80EF30BE1E449C43000B2519 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = RZHMRCMVDQ;
+						DevelopmentTeam = 8J2EV8GJ9Z;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -357,10 +367,11 @@
 			baseConfigurationReference = F9DB556BA5690B0F6EB09A83 /* Pods-EchoFoo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = RZHMRCMVDQ;
+				CODE_SIGN_ENTITLEMENTS = EchoFoo/EchoFoo.entitlements;
+				DEVELOPMENT_TEAM = 8J2EV8GJ9Z;
 				INFOPLIST_FILE = EchoFoo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = edu.queensvocational.robotigers.EchoFoo;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.queensvocational.robotigers1796.EchoFoo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -371,10 +382,11 @@
 			baseConfigurationReference = 9BC55A7E4A94C8EB9E4CA29C /* Pods-EchoFoo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = RZHMRCMVDQ;
+				CODE_SIGN_ENTITLEMENTS = EchoFoo/EchoFoo.entitlements;
+				DEVELOPMENT_TEAM = 8J2EV8GJ9Z;
 				INFOPLIST_FILE = EchoFoo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = edu.queensvocational.robotigers.EchoFoo;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.queensvocational.robotigers1796.EchoFoo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

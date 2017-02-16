@@ -156,9 +156,10 @@ class CoreDataStack: NSObject, CDEPersistentStoreEnsembleDelegate {
         }
     }
     
+    //  Use Echo.text as the uniqueIdentifier
     func persistentStoreEnsemble(_ ensemble: CDEPersistentStoreEnsemble!, globalIdentifiersForManagedObjects objects: [AnyObject]!) -> [AnyObject]! {
-        NSLog("%@", (objects as NSArray).value(forKeyPath: "uniqueIdentifier") as! [AnyObject])
-        return (objects as NSArray).value(forKeyPath: "uniqueIdentifier") as! [AnyObject]
+        NSLog("%@", (objects as NSArray).value(forKeyPath: "text") as! [AnyObject])
+        return (objects as NSArray).value(forKeyPath: "text") as! [AnyObject]
     }
     
     func syncWithCompletion(_ completion: (() -> Void)!) {
