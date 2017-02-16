@@ -13,6 +13,12 @@ class EchoTableViewController: UITableViewController {
 
     var echoArray: [NSManagedObject] = []
     
+    @IBAction func refreshButtonAction(_ sender: UIBarButtonItem) {
+        print("Refresh table")
+        refreshEchoArray()
+        tableView.reloadData()
+    }
+    
     private func refreshEchoArray() {
         CoreDataStack.defaultStack.syncWithCompletion(nil)
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Echo")
